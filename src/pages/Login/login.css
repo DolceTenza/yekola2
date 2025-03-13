@@ -21,9 +21,37 @@
     z-index: -1;
 }
 
-.auth__container{
-    position: relative;
+.particles{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 400px;
-    padding: 20px;
+    height: 100%;
+    z-index: 1;
+}
+
+.form-container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.form-container .top{
+    color: #fff;
+    width: 90%;
+    margin: 6px auto;
+}
+.top h1{
+    text-align: center;
+}
+.top p{
+    font-size: 16px;
+    text-align: center;
+}
+.form-container .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin : 0 auto;
+    width: 90%;
 }
