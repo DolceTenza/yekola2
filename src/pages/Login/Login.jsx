@@ -1,6 +1,7 @@
 import React from "react";
 import "./login.css"
 import { Particles } from "../../component/Particles";
+import {TiMail, TiKey} from "react-icons/ti"
 
 export const Login = () => {
   return (
@@ -18,10 +19,12 @@ export const Login = () => {
         <div className="bottom">
           <form className="form">
             <div className="input-box">
+              <TiMail className="icon" />
               <input type="text" placeholder="E-mail" name="email" />
             </div>
             <div className="input-box" >
-              <input type="text" placeholder="Mot de passe" name="password"/>
+              <TiKey className="icon"/>
+              <input type="password" placeholder="Mot de passe" name="password"/>
             </div>
             <button className="btn">Connexion</button>
             <div className="link">
