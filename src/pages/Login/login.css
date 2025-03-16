@@ -109,6 +109,7 @@
 @media screen and (max-width: 758px) {
     .form-container{
         width: 98%;
+        top: 45%;
     }
     .form-container .bottom{
         padding: 30px 12px;
