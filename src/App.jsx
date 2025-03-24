@@ -3,7 +3,8 @@ import { Navbar } from './component/Navbar'
 import { Home } from './pages/Home/Home'
 import { Login } from './pages/Login/Login'
 import { Register } from './pages/Register/Register'
-
+import { useContext } from 'react'
+import { AuthContext } from './Context/Context'
 
 const Layout = () => {
   return (
@@ -18,22 +19,23 @@ const Layout = () => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />
-      }
-    ]
-  },
-  {
-    path: "/login",
     element : <Login/>
-  }, 
+  },
   {
     path: "/register",
     element : <Register/>
-  }
+  },
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/home",
+        element: <Home />
+      }
+    ]
+  }, 
+  
 ])
 
 function App() {
